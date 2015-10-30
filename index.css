@@ -1,0 +1,45 @@
+@media all and (min-width:600px) and (max-width:1500px) {
+    table {
+        width: 80%;
+        overflow: hidden;
+        border-collapse: inherit;
+      
+    }
+    
+    td,th {
+        border: 2px solid olive;
+        padding: 10px;
+        position: relative;
+        outline: 0;
+    }
+    
+    
+    tbody tr:hover {
+        background-color: coral;
+    }
+    
+    
+    td:hover::after,
+    thead th:not(:empty):hover::after,
+    td:focus::after,
+    thead th:not(:empty):focus::after {
+        content: '';
+        height: 10000px;
+        left: 0;
+        position: absolute;
+        top: -5000px;
+        width: 100%;
+        z-index: -1;
+    }
+    
+    
+    td:hover::after,
+    th:hover::after {
+        background-color: mediumspringgreen;
+    }
+    
+    th{
+    background-color: snow;
+    }
+    
+}
